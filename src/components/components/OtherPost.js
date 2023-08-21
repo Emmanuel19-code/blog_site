@@ -7,7 +7,7 @@ const OtherPost = ({title,id}) => {
                     Other Posts You may like
                  </h4>
                  <div className='mt-3'>
-                    <img src="/assets/Image2.png" className="w-64 h-64"/>
+                    <img src="/assets/Image2.png" alt="" className="w-64 h-64"/>
                     <h3 className='text-lg font-bold mt-2'>
                         Lorem Ipsum World
                      </h3>

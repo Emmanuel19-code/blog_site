@@ -10,7 +10,7 @@ export default function Navbar (){
         <div className="md:flex items-center hidden">
              <div className="font-bold mr-10">
                 <h4 className="text-2xl">
-                    Emma's Blog
+                    <Link to={"/"}>Emma's Blog</Link>
                 </h4>
             </div>
             <div className="flex items-center mr-1 p-1">
@@ -25,13 +25,13 @@ export default function Navbar (){
                     <Link to={"/food"}>FOOD</Link>
                 </li>
                 <li className="m-2">
-                    <a href="/technology">TECHNOLOGY</a>
+                     <Link to={"/technology"}>TECHNOLOGY</Link>
                 </li>
                 <li className="m-2">
-                    <a href="/movies">MOVIES</a>
+                     <Link to={"movies"}>MOVIES</Link>
                 </li>
                 <li className="m-2">
-                    <a href="/design">DESIGN</a>
+                     <Link to={"/design"}>DESIGN</Link>
                 </li>
              </ul>
          </div>
@@ -55,37 +55,37 @@ export default function Navbar (){
       {
         show && 
         <div className="absolute top-12 md:hidden">
-           <div id="dropdown" class=" bg-white divide-y mt-2 divide-gray-100 rounded-lg shadow w-44 ">
+           <div id="dropdown" className=" bg-white divide-y mt-2 divide-gray-100 rounded-lg shadow w-44 ">
             <ul class="py-2 text-sm text-gray-700 " aria-labelledby="dropdownDefaultButton">
-                <li onClick={()=>{setShow(false)}}>
-                     <a href="/art" class="block px-4 py-2 hover:bg-gray-100 ">
+                  <li onClick={()=>{setShow(false)}}>
+                     <Link to={"/art"} className="block px-4 py-2 hover:bg-gray-100 ">
                         Art
-                     </a>
+                     </Link>
                 </li>
                   <li onClick={()=>{setShow(false)}}>
-                     <a href="/science" class="block px-4 py-2 hover:bg-gray-100 ">
+                     <Link to={"/science"} className="block px-4 py-2 hover:bg-gray-100 ">
                         Science
-                     </a>
+                     </Link>
                 </li>
               <li onClick={()=>{setShow(false)}}>
-                <a href="/food" class="block px-4 py-2 hover:bg-gray-100 ">
+                <Link to={"/food"} className="block px-4 py-2 hover:bg-gray-100 ">
                         Food
-                     </a>
+                     </Link>
              </li>
               <li onClick={()=>{setShow(false)}}>
-                 <a href="/technology" class="block px-4 py-2 hover:bg-gray-100 ">
+                 <Link to={"/technology"} className="block px-4 py-2 hover:bg-gray-100 ">
                         Technology
-                 </a>
+                 </Link>
              </li>
                <li onClick={()=>{setShow(false)}}>
-                 <a href="/movies" class="block px-4 py-2 hover:bg-gray-100 ">
+                 <Link to={"/movies"} className="block px-4 py-2 hover:bg-gray-100 ">
                        Movies
-                 </a>
+                 </Link>
              </li>
                <li onClick={()=>{setShow(false)}}>
-                 <a href="/design" class="block px-4 py-2 hover:bg-gray-100 ">
+                 <Link to={"/design"} className="block px-4 py-2 hover:bg-gray-100 ">
                         Design
-                 </a>
+                 </Link>
              </li>
          </ul>
           </div>

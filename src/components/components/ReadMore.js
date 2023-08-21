@@ -1,15 +1,14 @@
-import { Link } from "react-router-dom";
 import OtherPost from '../components/OtherPost'
 
-const ReadMore = () => {
+const ReadMore = ({time,content,title,writer}) => {
   return (
     <div className='flex justify-center items-center flex-col'>
         <div className='flex'>
              <div className='m-2 md:w-4/5 border p-1'>
-                <img src="/assets/Image1.jpg" className='w-full h-72'/>
+                <img src="/assets/Image1.jpg" alt="" className='w-full h-72'/>
                 <div className='mt-2 flex items-center'>
                   {/*Profile picture*/}
-                    <img src="/assets/Image8.jpg" className='w-14 h-14 rounded-full'/>
+                    <img src="/assets/Image8.jpg" alt="" className='w-14 h-14 rounded-full'/>
                     <div className='ml-2'>
                         <p className='font-bold'>John Doe</p>
                         <p className="text-sm font-semibold">
